@@ -1,0 +1,29 @@
+﻿.ControlUnit {
+    height: 30px;
+    width: 100%;
+    border: 2px solid white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Table {
+    outline: 1px solid white;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+}
+
+thead.Columns {
+    outline: 1px solid white;
+}
+
+tr {
+    text-align: center;
+}
+.Database.Table.table.Rows.tr:hover {
+    outline: 1px solid white;
+}

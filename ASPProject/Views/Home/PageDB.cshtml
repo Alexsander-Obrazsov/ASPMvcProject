@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width" />
+		<title>@ViewBag.FullName</title>
+		<link href="~/css/PageDB.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="UserData">
+			<a>Role: @ViewBag.Role</a>
+			<br />
+			<a>Name: @ViewBag.FullName</a>
+			<br />
+			<a>Login: @ViewBag.Login</a>
+		</div>
+	@if (ViewBag.Role == "Admin")
+	{ await Html.RenderPartialAsync("PageDB/AdminDB"); }
+	@if (ViewBag.Role == "Teacher")
+	{ await Html.RenderPartialAsync("PageDB/TeacherDB"); }
+	@if (ViewBag.Role == "Student")
+	{ await Html.RenderPartialAsync("PageDB/StudentDB"); }
+	</body>
+</html>

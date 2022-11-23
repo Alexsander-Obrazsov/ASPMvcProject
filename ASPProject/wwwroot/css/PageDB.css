@@ -1,0 +1,11 @@
+﻿body {
+    background: black;
+    color: white;
+    font-size: 18px;
+}
+
+.UserData {
+    border: 1px solid white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
